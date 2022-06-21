@@ -2,7 +2,7 @@
   /**
    * colors
    */
-
+  // --hsl-black: hsl(0deg 1% 15% / 5%);
   --rich-black-fogra-29: hsl(225, 25%, 9%);
   --rich-black-fogra-39: hsl(170, 21%, 5%);
   --raisin-black: hsl(228, 13%, 15%);
@@ -17,6 +17,7 @@
   --white: hsl(0, 100%, 100%);
   --black: hsl(0, 0%, 0%);
   --jet: hsl(0, 0%, 20%);
+  --box-shadow: 5px 30px 50px hsl(0deg 1% 15% / 5%);
 
   /**
    * typography
