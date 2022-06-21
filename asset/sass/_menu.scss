@@ -1,0 +1,16 @@
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &-link {
+    font-size: var(--fs-9);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    padding: 30px 15px;
+    color: var(--white);
+    transition: var(--transition-1);
+    &:hover {
+      color: var(--citrine);
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.upcoming {
+  background: url("../../images/upcoming-bg.png") no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-block: var(--section-padding);
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  &-title {
+  }
+  &-subtitle {
+    color: var(--citrine);
+    font-size: var(--fs-11);
+    font-weight: var(--fw-500);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  &-btn {
+    color: var(--white);
+    background: var(--raisin-black);
+    font-size: var(--fs-11);
+    font-weight: var(--fw-500);
+    border: 2px solid var(--gunmetal-1);
+    padding: 12px 26px;
+    border-radius: 50px;
+  }
+}

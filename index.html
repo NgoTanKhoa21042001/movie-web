@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmlane - Best movie collections</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./dist/css/app.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="top">
+    <header class="header">
+      <div class="container">
+        <div class="header-container">
+          <img src="./images/logo.svg" alt="" class="header-logo" />
+          <ul class="menu">
+            <li>
+              <a href="" class="menu-link">Home</a>
+            </li>
+            <li>
+              <a href="" class="menu-link">MOVIE</a>
+            </li>
+            <li>
+              <a href="" class="menu-link">TV SHOW</a>
+            </li>
+            <li>
+              <a href="" class="menu-link">WEB SERIES</a>
+            </li>
+            <li>
+              <a href="" class="menu-link">PRICING</a>
+            </li>
+          </ul>
+          <div class="header-actions">
+            <div class="search">
+              <ion-icon name="search"></ion-icon>
+            </div>
+            <div class="lang-wrapper">
+              <label for="language">
+                <ion-icon name="globe-outline"></ion-icon>
+              </label>
+              <select name="language" id="language">
+                <option value="en">EN</option>
+                <option value="au">AU</option>
+                <option value="ar">AR</option>
+                <option value="tu">TU</option>
+              </select>
+            </div>
+            <button class="btn btn-primary">SIGN IN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-subtitle">Filmlane</div>
+          <h1 class="h1 hero-title">
+            Unlimited <strong>Movie</strong>, TVs Shows, & More.
+          </h1>
+          <div class="meta-wrapper">
+            <div class="badge-wrapper">
+              <div class="badge badge-fill">PG 18</div>
+              <div class="badge badge-outline">HD</div>
+            </div>
+            <div class="ganre-wrapper">
+              <a href="">Romance, </a>
+              <a href="">Drama</a>
+            </div>
+            <div class="date-time">
+              <div>
+                <ion-icon name="calendar"></ion-icon>
+                <time datetime="2022">2022</time>
+              </div>
+              <div>
+                <ion-icon name="time"></ion-icon>
+                <time datetime="PT128M">128 min</time>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="upcoming">
+      <div class="container">
+        <div class="upcoming-wrapper">
+          <div class="upcoming-title">
+            <p class="upcoming-subtitle">Online Streaming</p>
+            <h2 class="h2 section-title">Upcoming Movies</h2>
+          </div>
+          <ul class="upcoming-list">
+            <li>
+              <button class="upcoming-btn">Movies</button>
+            </li>
+            <li>
+              <button class="upcoming-btn">TV Shows</button>
+            </li>
+            <li>
+              <button class="upcoming-btn">Anime</button>
+            </li>
+          </ul>
+        </div>
+        <ul class="movie-list has-scrollbar"></ul>
+      </div>
+    </section>
+  </body>
+</html>
