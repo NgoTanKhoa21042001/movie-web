@@ -1,0 +1,70 @@
+.top-rated {
+  --shadow: inset 0 3px 7px hsl(0deg 0% 0% / 80%);
+  --text-shadow: 0 3px 25px hsl(57deg 97% 45% / 50%);
+  background: url("../../images/top-rated-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-block: var(--section-padding);
+}
+
+.top-rated .section-subtitle,
+.section-title {
+  text-align: center;
+}
+
+.top-rated .section-title {
+  margin-bottom: 50px;
+}
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.filter-btn {
+  position: relative;
+  background: var(--rich-black-fogra-39);
+  color: var(--light-gray);
+  font-size: var(--fs-10);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  padding: 17px 25px;
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.top-rated .filter-btn:focus {
+  color: var(--citrine);
+  text-shadow: var(--text-shadow);
+}
+
+.top-rated .filter-btn:focus {
+  color: var(--citrine);
+  text-shadow: var(--text-shadow);
+}
+
+.top-rated .filter-btn:focus::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 15px;
+  background: var(--citrine);
+  left: 0;
+}
+
+.top-rated .filter-btn:focus::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 15px;
+  background: var(--citrine);
+  right: 0;
+}
