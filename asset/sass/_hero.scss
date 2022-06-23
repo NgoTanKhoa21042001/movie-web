@@ -37,36 +37,6 @@
     align-items: center;
     gap: 30px;
   }
-  .badge-wrapper,
-  .ganre-wrapper,
-  .date-time {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 5px 10px;
-  }
-
-  .ganre-wrapper > a {
-    color: var(--gainsboro);
-    font-size: var(--fs-9);
-    font-weight: var(--fw-500);
-    transition: var(--transition-1);
-  }
-  .date-time {
-    gap: 15px;
-  }
-  .date-time > div {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: var(--gainsboro);
-    font-size: var(--fs-9);
-    font-weight: var(--fw-500);
-  }
-  .date-time ion-icon {
-    --ionicon-stroke-width: 50px;
-    color: var(--citrine);
-  }
 }
 .container {
   // width: 1120px;

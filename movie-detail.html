@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Filmlane - Best movie collections</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./dist/css/app.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="top">
+    <div class="wrapper">
+      <header class="header active" data-header>
+        <div class="container">
+          <div class="header-container">
+            <img src="./images/logo.svg" alt="" class="header-logo" />
+            <ul class="menu">
+              <li>
+                <a href="" class="menu-link">Home</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">MOVIE</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">TV SHOW</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">WEB SERIES</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">PRICING</a>
+              </li>
+            </ul>
+            <div class="header-actions">
+              <div class="search">
+                <ion-icon name="search"></ion-icon>
+              </div>
+              <div class="lang-wrapper">
+                <label for="language">
+                  <ion-icon name="globe-outline"></ion-icon>
+                </label>
+                <select name="language" id="language">
+                  <option value="en">EN</option>
+                  <option value="au">AU</option>
+                  <option value="ar">AR</option>
+                  <option value="tu">TU</option>
+                </select>
+              </div>
+              <button class="btn btn-primary">SIGN IN</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="movie-detail">
+        <div class="container">
+          <div class="detail-container">
+            <figure class="movie-detail-banner">
+              <img src="./images/movie-4.png" alt="" />
+              <button class="play-btn">
+                <ion-icon
+                  name="play-circle-outline"
+                  role="img"
+                  class="md hydrated"
+                  aria-label="play circle outline"
+                ></ion-icon>
+              </button>
+            </figure>
+            <div class="movie-detail-content">
+              <div class="detail-subtitle">New Episodes</div>
+              <div class="h1 detail-title">Free <strong>Guy</strong></div>
+              <div class="meta-wrapper">
+                <div class="badge-wrapper">
+                  <div class="badge badge-fill">PG 13</div>
+                  <div class="badge badge-outline">HD</div>
+                </div>
+                <div class="ganre-wrapper">
+                  <a href="#">Comedy</a>
+                  <a href="#">Action</a>
+                  <a href="#">Adventure</a>
+                  <a href="#">Science Fiction</a>
+                </div>
+                <div class="date-time">
+                  <div>
+                    <ion-icon name="calendar"></ion-icon>
+                    <time datetime="2022">2022</time>
+                  </div>
+                  <div>
+                    <ion-icon name="time"></ion-icon>
+                    <time datetime="PT128M">128 min</time>
+                  </div>
+                </div>
+              </div>
+              <p class="storyline">
+                A bank teller called Guy realizes he is a background character
+                in an open world video game called Free City that will soon go
+                offline.
+              </p>
+              <div class="details-actions">
+                <button class="share">
+                  <ion-icon
+                    name="share-social"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="share social"
+                  ></ion-icon>
+                  <span>Share</span>
+                </button>
+                <div class="title-detail">
+                  <p class="title">Prime Video</p>
+                  <p class="text">Streaming Channels</p>
+                </div>
+                <div class="btn btn-primary">
+                  <ion-icon name="play"></ion-icon>
+                  <span>Watch Now</span>
+                </div>
+              </div>
+              <a
+                href="./images/service-banner.jpg"
+                download
+                class="dowload-btn"
+              >
+                <span>DOWNLOAD</span>
+                <ion-icon
+                  name="download-outline"
+                  role="img"
+                  class="md hydrated"
+                  aria-label="download outline"
+                ></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tv-series">
+        <div class="container">
+          <div class="tv-series-container">
+            <div class="section-subtitle">BEST TV SERIES</div>
+            <h2 class="h2 section-title">World Best TV Series</h2>
+          </div>
+          <ul class="movie-list">
+            <li>
+              <div class="movie-card">
+                <a href="./movie-detail.html">
+                  <figure class="card-banner">
+                    <img src="./images/series-1.png" alt="" />
+                  </figure>
+                </a>
+                <div class="title-wrapper">
+                  <a href="">
+                    <h3 class="card-title">Moon Knight</h3>
+                  </a>
+                  <time datetime="2022">2022</time>
+                </div>
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+                  <div class="duration">
+                    <ion-icon name="time"></ion-icon>
+                    <time datetime="PT137M"> 47 min</time>
+                  </div>
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+                    <data>8.6</data>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="movie-card">
+                <a href="./movie-detail.html">
+                  <figure class="card-banner">
+                    <img src="./images/series-2.png" alt="" />
+                  </figure>
+                </a>
+                <div class="title-wrapper">
+                  <a href="">
+                    <h3 class="card-title">Halo</h3>
+                  </a>
+                  <time datetime="2022">2022</time>
+                </div>
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+                  <div class="duration">
+                    <ion-icon name="time"></ion-icon>
+                    <time datetime="PT137M"> 59 min</time>
+                  </div>
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+                    <data>8.8</data>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="movie-card">
+                <a href="./movie-detail.html">
+                  <figure class="card-banner">
+                    <img src="./images/series-3.png" alt="" />
+                  </figure>
+                </a>
+                <div class="title-wrapper">
+                  <a href="">
+                    <h3 class="card-title">Vikings: Valhalla</h3>
+                  </a>
+                  <time datetime="2022">2022</time>
+                </div>
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+                  <div class="duration">
+                    <ion-icon name="time"></ion-icon>
+                    <time datetime="PT137M"> 51 min</time>
+                  </div>
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+                    <data>8.3</data>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="movie-card">
+                <a href="./movie-detail.html">
+                  <figure class="card-banner">
+                    <img src="./images/series-4.png" alt="" />
+                  </figure>
+                </a>
+                <div class="title-wrapper">
+                  <a href="">
+                    <h3 class="card-title">Money Heist</h3>
+                  </a>
+                  <time datetime="2022"> 2017</time>
+                </div>
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+                  <div class="duration">
+                    <ion-icon name="time"></ion-icon>
+                    <time datetime="PT137M"> 70 min</time>
+                  </div>
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+                    <data>8.3</data>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="footer-brand-wrapper">
+              <a href="./index.html" class="footer-logo">
+                <img src="./images/logo.svg" alt="" />
+              </a>
+              <ul class="footer-list">
+                <li>
+                  <a href="#" class="footer-link">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Movie</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">TV Show</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Web Series</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Pricing</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="quicklink-wrapper">
+              <ul class="quicklink-list">
+                <li>
+                  <a href="#" class="quicklink-link">FAQ</a>
+                </li>
+                <li>
+                  <a href="#" class="quicklink-link">Help center</a>
+                </li>
+                <li>
+                  <a href="#" class="quicklink-link">Terms of use</a>
+                </li>
+                <li>
+                  <a href="#" class="quicklink-link">Privacy</a>
+                </li>
+              </ul>
+              <ul class="footer-social">
+                <li>
+                  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+                <li>
+                  <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+                <li>
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+                <li>
+                  <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-container">
+              <p class="copyright">
+                © 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+              </p>
+              <img src="./images/footer-bottom-img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <a href="#top" class="go-top active" data-go-top>
+        <ion-icon name="arrow-up"></ion-icon>
+      </a>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
