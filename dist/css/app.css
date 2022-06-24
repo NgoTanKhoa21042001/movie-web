@@ -99,18 +99,18 @@ input {
    * typography
    */
   --ff-poppins: "Poppins", sans-serif;
-  --fs-1: 36px;
-  --fs-2: 32px;
-  --fs-3: 30px;
-  --fs-4: 24px;
-  --fs-5: 20px;
-  --fs-6: 18px;
-  --fs-7: 16px;
-  --fs-8: 15px;
-  --fs-9: 14px;
-  --fs-10: 13px;
-  --fs-11: 12px;
-  --fs-12: 11px;
+  --fs-1: 2.25rem;
+  --fs-2: 2rem;
+  --fs-3: 1.9rem;
+  --fs-4: 1.5rem;
+  --fs-5: 1.3rem;
+  --fs-6: 1.1rem;
+  --fs-7: 1rem;
+  --fs-8: 0.938rem;
+  --fs-9: 0.875rem;
+  --fs-10: 0.813rem;
+  --fs-11: 0.75rem;
+  --fs-12: 0.688rem;
   --fw-500: 500;
   --fw-700: 700;
   /**
@@ -219,6 +219,24 @@ input {
   border-color: 1px solid var(--white);
 }
 
+.has-scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--gainsboro);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 1px 0 var(--black), inset 0 -1px 0 var(--black);
+          box-shadow: inset 0 1px 0 var(--black), inset 0 -1px 0 var(--black);
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  -webkit-box-shadow: 0 0 0 2px var(--citrine);
+          box-shadow: 0 0 0 2px var(--citrine);
+  border-radius: 10px;
+}
+
 html *::-webkit-scrollbar {
   border-radius: 0;
   width: 8px;
@@ -249,6 +267,7 @@ html *::-webkit-scrollbar-track {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  overflow-x: auto;
 }
 
 .movie-list > li {
@@ -441,6 +460,37 @@ html *::-webkit-scrollbar-track {
   color: var(--citrine);
 }
 
+@media (max-width: 1024px) {
+  .movie-list {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    grid-auto-columns: 48%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+  }
+  .movie-list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .movie-list > * {
+    scroll-snap-align: start;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -525,6 +575,23 @@ html *::-webkit-scrollbar-track {
   color: var(--black);
 }
 
+@media (max-width: 1024px) {
+  .header-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 35px;
+    margin-left: auto;
+  }
+  .header-actions .btn-primary {
+    padding: 10px 22px;
+    display: none;
+  }
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,6 +614,28 @@ html *::-webkit-scrollbar-track {
 
 .menu-link:hover {
   color: var(--citrine);
+}
+
+.menu-open-btn {
+  margin-left: 29px;
+  font-size: 3rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+  .menu-open-btn {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .hero {
@@ -783,6 +872,18 @@ html *::-webkit-scrollbar-track {
   margin-bottom: 30px;
 }
 
+@media (max-width: 1024px) {
+  .service-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service-content {
+    max-width: 100%;
+  }
+}
+
 .top-rated {
   --shadow: inset 0 3px 7px hsl(0deg 0% 0% / 80%);
   --text-shadow: 0 3px 25px hsl(57deg 97% 45% / 50%);
@@ -936,6 +1037,7 @@ html *::-webkit-scrollbar-track {
   border-radius: 4px;
   -webkit-box-shadow: var(--shadow-input);
           box-shadow: var(--shadow-input);
+  background-color: var(--white);
 }
 
 .cta-form-btn {
@@ -961,6 +1063,30 @@ html *::-webkit-scrollbar-track {
 .cta-form-btn:hover {
   background: var(--citrine);
   color: var(--eerie-black);
+}
+
+@media (max-width: 1024px) {
+  .cta-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 720px;
+  }
+  .cta-wrapper {
+    margin-bottom: 25px;
+  }
+  .cta-title, .cta-text {
+    text-align: center;
+  }
+  .cta .email-field {
+    max-width: 530px;
+  }
+  .cta-form-btn {
+    right: 12%;
+    top: 2px;
+    bottom: 3px;
+  }
 }
 
 .footer {

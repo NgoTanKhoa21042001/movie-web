@@ -13,4 +13,21 @@
       color: var(--citrine);
     }
   }
+  &-open-btn {
+    margin-left: 29px;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    display: none;
+    &-open-btn {
+      display: block;
+      display: flex;
+    }
+  }
 }

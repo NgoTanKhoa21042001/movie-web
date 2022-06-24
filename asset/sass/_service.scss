@@ -99,3 +99,15 @@
     }
   }
 }
+
+// responsive
+@media (max-width: 1024px) {
+  .service {
+    &-container {
+      flex-direction: column;
+    }
+    &-content {
+      max-width: 100%;
+    }
+  }
+}

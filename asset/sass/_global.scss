@@ -86,6 +86,21 @@
   border-color: 1px solid var(--white);
 }
 
+// scrollbar
+.has-scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--gainsboro);
+  border-radius: 10px;
+  box-shadow: inset 0 1px 0 var(--black), inset 0 -1px 0 var(--black);
+}
+.has-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  box-shadow: 0 0 0 2px var(--citrine);
+  border-radius: 10px;
+}
+
 html *::-webkit-scrollbar {
   border-radius: 0;
   width: 8px;
@@ -115,6 +130,7 @@ html *::-webkit-scrollbar-track {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  overflow-x: auto;
 }
 .movie-list > li {
   min-width: calc(25% - 22.5px);
@@ -251,4 +267,30 @@ html *::-webkit-scrollbar-track {
 .date-time ion-icon {
   --ionicon-stroke-width: 50px;
   color: var(--citrine);
+}
+
+@media (max-width: 1024px) {
+  .movie-list {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 48%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+  }
+  .movie-list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .movie-list > * {
+    scroll-snap-align: start;
+  }
 }

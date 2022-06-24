@@ -42,6 +42,7 @@
     padding: 18px 32px;
     border-radius: 4px;
     box-shadow: var(--shadow-input);
+    background-color: var(--white);
   }
   &-form-btn {
     position: absolute;
@@ -63,6 +64,30 @@
     &:hover {
       background: var(--citrine);
       color: var(--eerie-black);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .cta {
+    &-container {
+      flex-direction: column;
+      max-width: 720px;
+    }
+    &-wrapper {
+      margin-bottom: 25px;
+    }
+    &-title,
+    &-text {
+      text-align: center;
+    }
+    & .email-field {
+      max-width: 530px;
+    }
+    &-form-btn {
+      right: 12%;
+      top: 2px;
+      bottom: 3px;
     }
   }
 }

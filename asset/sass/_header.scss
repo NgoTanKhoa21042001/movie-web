@@ -60,3 +60,19 @@
     color: var(--black);
   }
 }
+// Responsive
+// Tablet
+@media (max-width: 1024px) {
+  .header {
+    &-actions {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      margin-left: auto;
+      .btn-primary {
+        padding: 10px 22px;
+        display: none;
+      }
+    }
+  }
+}
