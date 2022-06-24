@@ -1414,4 +1414,25 @@ html *::-webkit-scrollbar-track {
   font-size: var(--fs-11);
   color: var(--gainsboro);
 }
+
+@media (max-width: 1024px) {
+  .dowload-btn {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    position: inherit;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    padding: 18px 35px;
+  }
+  .detail-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .details-actions {
+    margin-bottom: 30px;
+  }
+}
 /*# sourceMappingURL=app.css.map */

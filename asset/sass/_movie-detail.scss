@@ -143,3 +143,18 @@
   font-size: var(--fs-11);
   color: var(--gainsboro);
 }
+
+@media (max-width: 1024px) {
+  .dowload-btn {
+    transform: rotate(0);
+    position: inherit;
+    max-width: max-content;
+    padding: 18px 35px;
+  }
+  .detail-container {
+    flex-direction: column;
+  }
+  .details-actions {
+    margin-bottom: 30px;
+  }
+}
