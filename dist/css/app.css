@@ -95,6 +95,7 @@ input {
   --jet: hsl(0, 0%, 20%);
   --box-shadow: 5px 30px 50px hsl(0deg 1% 15% / 5%);
   --shadow-top: 0 1px 3px hsl(0deg 0% 0% / 50%);
+  --shadow-search-btn: 0 12px 25px -8px hsla(0, 0%, 0%, 0.2);
   /**
    * typography
    */
@@ -559,7 +560,7 @@ html *::-webkit-scrollbar-track {
   padding: 10px 22px;
 }
 
-.header .search {
+.header .search-action-btn {
   font-size: 1.3rem;
   position: relative;
   color: var(--white);
@@ -572,7 +573,7 @@ html *::-webkit-scrollbar-track {
   cursor: pointer;
 }
 
-.header .search::after {
+.header .search-action-btn::after {
   content: "";
   position: absolute;
   top: 4px;
@@ -580,6 +581,42 @@ html *::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.1);
   width: 2px;
   height: 14px;
+}
+
+.header .search-wrapper.active .search-icon,
+.header .search-wrapper .close-icon {
+  display: none;
+}
+
+.header .search-wrapper .search-icon,
+.header .search-wrapper.active .close-icon {
+  display: block;
+}
+
+.header .input-wrapper {
+  position: absolute;
+  top: 105%;
+  right: 25%;
+  background-color: white;
+  padding: 8px 8px;
+  border-radius: 3px;
+  font-size: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-box-shadow: var(--shadow-search-btn);
+          box-shadow: var(--shadow-search-btn);
+  -webkit-transition: 0.35s cubic-bezier(0.33, 0.85, 0.4, 0.96);
+  transition: 0.35s cubic-bezier(0.33, 0.85, 0.4, 0.96);
+}
+
+.header .search-wrapper.active .input-wrapper {
+  visibility: visible;
+  opacity: 1;
+}
+
+.header .input-wrapper.active .lang-wrapper {
+  position: relative;
+  bottom: -3px;
 }
 
 .header .lang-wrapper {

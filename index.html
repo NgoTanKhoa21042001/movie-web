@@ -49,8 +49,29 @@
               </li>
             </ul>
             <div class="header-actions">
-              <div class="search">
-                <ion-icon name="search"></ion-icon>
+              <div class="search-wrapper" data-search-wrapper>
+                <button class="search-action-btn" data-search-btn>
+                  <ion-icon
+                    name="search-outline"
+                    class="search-icon md hydrated"
+                    role="img"
+                    aria-label="search outline"
+                  ></ion-icon>
+                  <ion-icon
+                    name="close-outline"
+                    class="close-icon md hydrated"
+                    role="img"
+                    aria-label="close outline"
+                  ></ion-icon>
+                </button>
+                <div class="input-wrapper">
+                  <input
+                    type="search"
+                    name="search"
+                    placeholder="Search here"
+                    class="search-input"
+                  />
+                </div>
               </div>
               <div class="lang-wrapper">
                 <label for="language">

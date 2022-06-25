@@ -25,11 +25,9 @@ window.addEventListener("scroll", function () {
 
 // search
 
-const search = document.querySelector(".search");
-const btn = document.querySelector(".search-btn");
-const input = document.querySelector(".input");
+const searchBtn = document.querySelector("[data-search-btn]");
+const searchWrapper = document.querySelector("[data-search-wrapper]");
 
-btn.addEventListener("click", () => {
-  search.classList.toggle("active");
-  input.focus();
+searchBtn.addEventListener("click", function () {
+  searchWrapper.classList.toggle("active");
 });
