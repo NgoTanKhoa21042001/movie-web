@@ -60,7 +60,6 @@
     border-radius: 4px;
     margin-inline: auto;
     cursor: pointer;
-    transition: var(--transition-1);
     &:hover {
       background: var(--citrine);
       color: var(--eerie-black);
@@ -83,11 +82,24 @@
     }
     & .email-field {
       max-width: 530px;
+      padding: 18px 24px;
     }
     &-form-btn {
       right: 12%;
       top: 2px;
       bottom: 3px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .cta {
+    & .email-field {
+      margin-bottom: 15px;
+    }
+    &-form-btn {
+      position: initial;
+      margin: 0 auto;
     }
   }
 }

@@ -92,3 +92,28 @@
     color: var(--citrine);
   }
 }
+
+@media (max-width: 767px) {
+  .footer {
+    &-container {
+      flex-direction: column;
+    }
+    &-brand-wrapper {
+      flex-direction: column;
+    }
+    &-logo {
+      width: max-content;
+      margin-inline: auto;
+      margin-bottom: 60px;
+    }
+  }
+  .quicklink-wrapper {
+    flex-direction: column;
+  }
+  .quicklink-list {
+    margin-bottom: 20px;
+  }
+  .copyright {
+    margin-bottom: 15px;
+  }
+}

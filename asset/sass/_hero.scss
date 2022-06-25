@@ -46,3 +46,11 @@
 
 @media (max-width: 1024px) {
 }
+
+@media (max-width: 767px) {
+  .hero {
+    &-title {
+      font-size: 2.3rem;
+    }
+  }
+}

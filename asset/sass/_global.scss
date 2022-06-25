@@ -294,3 +294,29 @@ html *::-webkit-scrollbar-track {
     scroll-snap-align: start;
   }
 }
+
+@media (max-width: 767px) {
+  .movie-list {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 94%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+  }
+  .movie-list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .movie-list > * {
+    scroll-snap-align: start;
+  }
+}

@@ -34,3 +34,17 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .upcoming {
+    &-wrapper {
+      flex-direction: column;
+    }
+    &-title .section-subtitle {
+      text-align: center;
+    }
+    &-title .section-title {
+      margin-bottom: 30px;
+    }
+  }
+}

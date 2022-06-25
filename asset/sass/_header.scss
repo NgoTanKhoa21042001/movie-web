@@ -25,6 +25,7 @@
     color: var(--white);
     display: flex;
     align-items: center;
+    cursor: pointer;
     &::after {
       content: "";
       position: absolute;
@@ -73,6 +74,16 @@
         padding: 10px 22px;
         display: none;
       }
+    }
+  }
+}
+
+// Phone
+
+@media (max-width: 767px) {
+  .header {
+    &-actions {
+      display: none;
     }
   }
 }

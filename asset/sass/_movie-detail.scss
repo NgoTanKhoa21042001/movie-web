@@ -145,6 +145,9 @@
 }
 
 @media (max-width: 1024px) {
+  .movie-detail {
+    padding-bottom: 0;
+  }
   .dowload-btn {
     transform: rotate(0);
     position: inherit;

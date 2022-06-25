@@ -491,6 +491,37 @@ html *::-webkit-scrollbar-track {
   }
 }
 
+@media (max-width: 767px) {
+  .movie-list {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    grid-auto-columns: 94%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+  }
+  .movie-list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .movie-list > * {
+    scroll-snap-align: start;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -538,6 +569,7 @@ html *::-webkit-scrollbar-track {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .header .search::after {
@@ -588,6 +620,12 @@ html *::-webkit-scrollbar-track {
   }
   .header-actions .btn-primary {
     padding: 10px 22px;
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-actions {
     display: none;
   }
 }
@@ -694,6 +732,12 @@ html *::-webkit-scrollbar-track {
   gap: 30px;
 }
 
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 2.3rem;
+  }
+}
+
 .upcoming {
   background: url("../../images/upcoming-bg.png") no-repeat;
   background-size: cover;
@@ -738,6 +782,21 @@ html *::-webkit-scrollbar-track {
   padding: 12px 26px;
   border-radius: 50px;
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .upcoming-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .upcoming-title .section-subtitle {
+    text-align: center;
+  }
+  .upcoming-title .section-title {
+    margin-bottom: 30px;
+  }
 }
 
 .service {
@@ -881,6 +940,24 @@ html *::-webkit-scrollbar-track {
   }
   .service-content {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .service-btn {
+    right: 24%;
+  }
+  .service-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service-card .card-icon {
+    width: 23%;
+  }
+  .service .card-text {
+    margin-bottom: 0;
   }
 }
 
@@ -1056,8 +1133,6 @@ html *::-webkit-scrollbar-track {
   border-radius: 4px;
   margin-inline: auto;
   cursor: pointer;
-  -webkit-transition: var(--transition-1);
-  transition: var(--transition-1);
 }
 
 .cta-form-btn:hover {
@@ -1081,11 +1156,22 @@ html *::-webkit-scrollbar-track {
   }
   .cta .email-field {
     max-width: 530px;
+    padding: 18px 24px;
   }
   .cta-form-btn {
     right: 12%;
     top: 2px;
     bottom: 3px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cta .email-field {
+    margin-bottom: 15px;
+  }
+  .cta-form-btn {
+    position: initial;
+    margin: 0 auto;
   }
 }
 
@@ -1222,6 +1308,40 @@ html *::-webkit-scrollbar-track {
 
 .copyright > a {
   color: var(--citrine);
+}
+
+@media (max-width: 767px) {
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-brand-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-logo {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-inline: auto;
+    margin-bottom: 60px;
+  }
+  .quicklink-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .quicklink-list {
+    margin-bottom: 20px;
+  }
+  .copyright {
+    margin-bottom: 15px;
+  }
 }
 
 .movie-detail {
@@ -1416,6 +1536,9 @@ html *::-webkit-scrollbar-track {
 }
 
 @media (max-width: 1024px) {
+  .movie-detail {
+    padding-bottom: 0;
+  }
   .dowload-btn {
     -webkit-transform: rotate(0);
             transform: rotate(0);

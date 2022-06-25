@@ -111,3 +111,20 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .service {
+    &-btn {
+      right: 24%;
+    }
+    &-card {
+      flex-direction: column;
+      & .card-icon {
+        width: 23%;
+      }
+    }
+    & .card-text {
+      margin-bottom: 0;
+    }
+  }
+}
