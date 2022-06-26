@@ -24,10 +24,59 @@
 
 @media (max-width: 1024px) {
   .menu {
-    display: none;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    right: -300px;
+    background: var(--eerie-black);
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    box-shadow: var(--shadow-menu);
+    z-index: 3;
+    visibility: hidden;
+    transition: 0.25s ease-in-out;
+    // display: none;
     &-open-btn {
       display: block;
       display: flex;
+    }
+    &-top {
+      padding: 30px 25px;
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 25px;
+    }
+    &-close-btn {
+      color: var(--white);
+      font-size: var(--fs-2);
+      padding: 5px;
+    }
+    &-list {
+      border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+      margin-bottom: 30px;
+    }
+    &-link {
+      padding: 10px 25px;
+      border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+      display: block;
+    }
+    &-social-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    &-social-link {
+      font-size: var(--fs-6);
+      color: var(--white);
+      transition: var(--transition-1);
+    }
+    &.active {
+      right: 0;
+      visibility: visible;
+      transition: 0.25s ease-out;
     }
   }
 }
