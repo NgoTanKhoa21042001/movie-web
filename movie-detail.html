@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Filmlane - Best movie collections</title>
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./dist/css/app.css" />
     <script
       type="module"
@@ -27,30 +27,123 @@
     <div class="wrapper">
       <header class="header active" data-header>
         <div class="container">
+          <div class="overlay" data-overlay></div>
           <div class="header-container">
             <a href="index.html">
               <img src="./images/logo.svg" alt="" class="header-logo" />
             </a>
-            <ul class="menu">
-              <li>
-                <a href="" class="menu-link">Home</a>
-              </li>
-              <li>
-                <a href="" class="menu-link">MOVIE</a>
-              </li>
-              <li>
-                <a href="" class="menu-link">TV SHOW</a>
-              </li>
-              <li>
-                <a href="" class="menu-link">WEB SERIES</a>
-              </li>
-              <li>
-                <a href="" class="menu-link">PRICING</a>
-              </li>
-            </ul>
+            <div class="menu" data-menu>
+              <div class="menu-top">
+                <a href="index.html" class="menu-logo">
+                  <img src="./images/logo.svg" alt="" />
+                </a>
+                <button class="menu-close-btn" data-menu-close-btn>
+                  <ion-icon
+                    name="close-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="close outline"
+                  ></ion-icon>
+                </button>
+              </div>
+              <ul class="menu-list">
+                <li>
+                  <a href="" class="menu-link">Home</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">MOVIE</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">TV SHOW</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">WEB SERIES</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">PRICING</a>
+                </li>
+              </ul>
+              <ul class="menu-social-list">
+                <li>
+                  <a href="#" class="menu-social-link">
+                    <ion-icon
+                      name="logo-twitter"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="logo twitter"
+                    ></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="menu-social-link">
+                    <ion-icon
+                      name="logo-facebook"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="logo facebook"
+                    ></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="menu-social-link">
+                    <ion-icon
+                      name="logo-pinterest"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="logo pinterest"
+                    ></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="menu-social-link">
+                    <ion-icon
+                      name="logo-instagram"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="logo instagram"
+                    ></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="menu-social-link">
+                    <ion-icon
+                      name="logo-youtube"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="logo youtube"
+                    ></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
             <div class="header-actions">
-              <div class="search">
-                <ion-icon name="search"></ion-icon>
+              <div class="search-wrapper" data-search-wrapper>
+                <button class="search-action-btn" data-search-btn>
+                  <ion-icon
+                    name="search-outline"
+                    class="search-icon md hydrated"
+                    role="img"
+                    aria-label="search outline"
+                  ></ion-icon>
+                  <ion-icon
+                    name="close-outline"
+                    class="close-icon md hydrated"
+                    role="img"
+                    aria-label="close outline"
+                  ></ion-icon>
+                </button>
+                <div class="input-wrapper">
+                  <input
+                    type="search"
+                    name="search"
+                    placeholder="Search here"
+                    class="search-input"
+                  />
+                </div>
               </div>
               <div class="lang-wrapper">
                 <label for="language">
